@@ -1,0 +1,71 @@
+.hero-slider {
+  position: relative;
+  width: 80%; /* Reduced width to 80% */
+  max-width: 1000px; /* Maximum width for larger screens */
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.slide {
+  position: relative;
+}
+
+.slide img {
+  width: 100%; /* Keep the image width to take full width of the slider */
+  height: 350px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the space without distorting */
+  border-radius: 10px; /* Optional: Adds rounded corners to the images */
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slide-content h2 {
+  margin: 0;
+  font-size: 1.5rem; /* Reduced font size */
+}
+
+.slide-content p {
+  margin: 0.5rem 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-slider {
+    width: 90%; /* Increase width slightly for smaller screens */
+    max-width: 600px;
+  }
+
+  .slide img {
+    height: 250px; /* Adjust height for smaller screens */
+  }
+
+  .slide-content h2 {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    width: 95%; /* Increase width further for very small screens */
+    max-width: 400px;
+  }
+
+  .slide img {
+    height: 200px; /* Adjust height for very small screens */
+  }
+
+  .slide-content h2 {
+    font-size: 1rem; /* Adjust font size for very small screens */
+  }
+}
