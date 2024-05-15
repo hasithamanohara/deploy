@@ -17,6 +17,8 @@ import NotFound from "./components/GeneralScreens/NotFound";
 import EditStory from "./components/StoryScreens/EditStory";
 import ReadListPage from "./components/ProfileScreens/ReadListPage";
 import HeroSlider from "./components/Hero_Section/Hero_slider";
+import NavBar from "./components/NavBar/NavBar";
+import AboutUs from "./components/About_Contact_Privacy/About_Us/About_us";
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<LayoutsWithHeader />}>
             <Route path="*" element={<NotFound />} />
+
+            <Route exact path="/AboutUs" element={<AboutUs />} />
 
             <Route exact path="/" element={<PrivateRoute />}>
               <Route exact path="/" element={<Home />} />

@@ -1,0 +1,15 @@
+/* AboutUs.css */
+
+.about-us {
+      padding: 20px;
+  }
+  
+  .about-us h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  
+  .about-us p {
+      margin-bottom: 15px;
+  }
+  

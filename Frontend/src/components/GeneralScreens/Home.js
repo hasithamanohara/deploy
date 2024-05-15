@@ -7,9 +7,10 @@ import CardStory from "../StoryScreens/CardStory";
 import NoStories from "../StoryScreens/NoStories";
 import Pagination from "./Pagination";
 import "../../Css/Home.css";
-
 import { useNavigate } from "react-router-dom";
 import HeroSlider from "../Hero_Section/Hero_slider";
+import NavBar from "../NavBar/NavBar"; 
+
 const Home = () => {
   const search = useLocation().search;
   const searchKey = new URLSearchParams(search).get("search");
@@ -55,6 +56,9 @@ const Home = () => {
 
   return (
     <div className="Inclusive-home-page">
+      <div>
+      <NavBar />
+      </div>
       <div>
         <HeroSlider />
       </div>
