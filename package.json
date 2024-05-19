@@ -1,9 +1,15 @@
 {
+
+  "engines": {
+    "version": "1.0.0",
+    "node": "20.11.0",
+    "npm": "10.2.4"
+  },
   "scripts": {
     "dev": "concurrently \"cd Frontend && npm start\" \"cd Backend && npm start\"",
     "start": "node Backend/server.js",
     "heroku-postbuild": "cd Frontend && npm install && npm run build"
-
+    
   },
 
   "dependencies": {
