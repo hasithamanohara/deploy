@@ -2,11 +2,15 @@
   "name": "MaNoZy-Paly-ZoNe",
   "version": "1.0.0",
   "scripts": {
-    "start": "node backend/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "node Backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "engines": {
     "node": "20.11.0",
     "npm": "10.2.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
   }
 }
